@@ -1,0 +1,21 @@
+/* src/Heart.css */
+
+.heart {
+    width: 50px;
+    height: 50px;
+    background-image: url('/public/heart.png');
+    /* Use the path relative to the public folder */
+    background-size: cover;
+    background-position: center;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
